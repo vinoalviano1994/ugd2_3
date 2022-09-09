@@ -6,6 +6,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
+import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textfield.TextInputLayout
 
@@ -28,7 +29,10 @@ class MainActivity : AppCompatActivity() {
         val btnLogin: Button = findViewById(R.id.btLogin)
 
         btnClear.setOnClickListener{
-            inputUssername.getEditText()?.setText("")
+            inputUssername.setText("")
+            inputPassword.setText("")
+
+            Snackbar.make(mainLayout, "Text Cleared Success", Snackbar.LENGTH_LONG).show()
         }
 
 
