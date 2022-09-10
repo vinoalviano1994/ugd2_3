@@ -9,9 +9,13 @@
     android:background="#EE8317">
 
     <FrameLayout
-        android:layout_width="380dp"
-        android:layout_height="698dp"
-        android:background="#FFFDD0"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="#FFF6EB"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,9 +28,9 @@
 
             <ImageView
                 android:id="@+id/imageView"
-                android:layout_width="252dp"
-                android:layout_height="145dp"
-                android:layout_marginTop="16dp"
+                android:layout_width="239dp"
+                android:layout_height="163dp"
+                android:layout_marginTop="32dp"
                 android:background="@drawable/bandicam_2022_09_01_08_52_29_903"
                 android:src="@drawable/bandicam_2022_09_01_08_52_29_903"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -35,9 +39,11 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/etPassword"
-                android:layout_width="283dp"
+                android:layout_width="0dp"
                 android:layout_height="50dp"
+                android:layout_marginStart="32dp"
                 android:layout_marginTop="24dp"
+                android:layout_marginEnd="32dp"
                 android:hint="Password"
                 android:minHeight="48dp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -46,9 +52,11 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/etUsername"
-                android:layout_width="283dp"
+                android:layout_width="0dp"
                 android:layout_height="50dp"
-                android:layout_marginTop="100dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="128dp"
+                android:layout_marginEnd="32dp"
                 android:hint="Username"
                 android:minHeight="48dp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -89,7 +97,7 @@
                     android:text="Clear" />
 
                 <Button
-                    android:id="@+id/btnLogin"
+                    android:id="@+id/btLogin"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
