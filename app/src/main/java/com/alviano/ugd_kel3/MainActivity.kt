@@ -41,6 +41,10 @@ class MainActivity : AppCompatActivity() {
             startActivity(moveRegister)
         }
 
+        btnLogin.setOnClickListener{
+            val moveHome = Intent(this@MainActivity, homeActivity::class.java)
+            startActivity(moveHome)
+        }
 
     }
 }

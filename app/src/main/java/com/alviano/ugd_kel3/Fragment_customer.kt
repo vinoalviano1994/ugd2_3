@@ -12,7 +12,10 @@ import com.alviano.ugd_kel3.entity.customer
 
 
 class Fragment_customer : Fragment() {
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
         return inflater.inflate(R.layout.fragment_customer, container, false)
     }
 
