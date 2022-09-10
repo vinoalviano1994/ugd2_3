@@ -34,11 +34,11 @@ class Registrasi : AppCompatActivity() {
 
         btnDaftar.setOnClickListener(View.OnClickListener {
             var checkRegistrasi = false
-            var username: String = inputUsername.getEditText()?.getText().toString()
-            var password: String = inputPassword.getEditText()?.getText().toString()
-            var tanggalLahir: String = inputTl.getEditText()?.getText().toString()
-            var noTelp: String = inputNoTelp.getEditText()?.getText().toString()
-            var email: String = inputEmail.getEditText()?.getText().toString()
+            var username: String = inputUsername.getText().toString()
+            var password: String = inputPassword.getText().toString()
+            var tanggalLahir: String = inputTl.getText().toString()
+            var noTelp: String = inputNoTelp.getText().toString()
+            var email: String = inputEmail.getText().toString()
 
             if(username.isEmpty()){
                 inputUsername.setError("Username must be filled with text")

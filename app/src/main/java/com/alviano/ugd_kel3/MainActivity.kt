@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
         mainLayout = findViewById(R.id.mainLayout)
         val btnClear: Button = findViewById(R.id.btnClear)
         val btnRegister: TextView = findViewById(R.id.tvRegister)
-        val btnLogin: Button = findViewById(R.id.btnLogin)
+        val btnLogin: Button = findViewById(R.id.btLogin)
 
         btnClear.setOnClickListener{
             inputUssername.setText("")
