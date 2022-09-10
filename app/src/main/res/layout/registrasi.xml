@@ -8,13 +8,13 @@
     android:background="#EE8317">
 
     <FrameLayout
-        android:layout_width="380dp"
-        android:layout_height="698dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:background="#FFFDD0"
+        android:background="#FFF6EB"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,12 +24,12 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-
             <ImageView
                 android:id="@+id/imageView2"
                 android:layout_width="239dp"
                 android:layout_height="163dp"
                 android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
                 android:layout_marginEnd="8dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -39,108 +39,85 @@
                 app:layout_constraintVertical_bias="0.03"
                 app:srcCompat="@drawable/bandicam_2022_09_01_08_52_29_903" />
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/textInputLayout1"
-                android:layout_width="279dp"
-                android:layout_height="58dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="40dp"
-                android:layout_marginEnd="8dp"
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputLayoutUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="32dp"
+                android:hint="Username"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView2">
+                app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/inputLayoutUsername"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:hint="Username"
-                    android:textColor="#000000"
-                    tools:layout_editor_absoluteX="8dp"
-                    tools:layout_editor_absoluteY="242dp" />
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/textInputLayout2"
-                android:layout_width="277dp"
-                android:layout_height="53dp"
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputLayoutPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
                 android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:hint="Password"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textInputLayout1">
+                app:layout_constraintTop_toBottomOf="@+id/inputLayoutUsername" />
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/inputLayoutPassword"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:hint="Password" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/textInputLayout3"
-                android:layout_width="276dp"
-                android:layout_height="59dp"
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputLayoutTL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
                 android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:hint="Tanggal lahir"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textInputLayout2">
+                app:layout_constraintTop_toBottomOf="@+id/inputLayoutPassword" />
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/inputLayoutTL"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Tanggal lahir" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/textInputLayout4"
-                android:layout_width="278dp"
-                android:layout_height="59dp"
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputLayoutNoTelp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
                 android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:hint="No Telp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textInputLayout3">
+                app:layout_constraintTop_toBottomOf="@+id/inputLayoutTL" />
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/inputLayoutNoTelp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="No Telp" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/textInputLayout5"
-                android:layout_width="277dp"
-                android:layout_height="56dp"
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputLayoutEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
                 android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:hint="Email"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.52"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textInputLayout4">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/inputLayoutEmail"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Email" />
-            </com.google.android.material.textfield.TextInputLayout>
+                app:layout_constraintTop_toBottomOf="@+id/inputLayoutNoTelp" />
 
             <Button
                 android:id="@+id/btnDaftar"
-                android:layout_width="107dp"
-                android:layout_height="54dp"
-                android:layout_marginTop="16dp"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="32dp"
                 android:text="Daftar"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.501"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textInputLayout5" />
+                app:layout_constraintTop_toBottomOf="@+id/inputLayoutEmail" />
 
             <TextView
                 android:id="@+id/tvLogin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="32dp"
                 android:text="Already have an account? Login"
                 android:textColor="#0067FF"
                 android:textSize="15dp"
@@ -148,7 +125,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.502"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/daftar"
+                app:layout_constraintTop_toBottomOf="@+id/btnDaftar"
                 app:layout_constraintVertical_bias="0.0" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
