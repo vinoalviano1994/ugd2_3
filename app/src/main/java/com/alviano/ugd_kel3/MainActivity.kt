@@ -21,12 +21,12 @@ class MainActivity : AppCompatActivity() {
 
         setTitle("LOGIN")
 
-        inputUssername = findViewById(R.id.etUserrname)
+        inputUssername = findViewById(R.id.etUsername)
         inputPassword = findViewById(R.id.etPassword)
         mainLayout = findViewById(R.id.mainLayout)
         val btnClear: Button = findViewById(R.id.btnClear)
         val btnRegister: TextView = findViewById(R.id.tvRegister)
-        val btnLogin: Button = findViewById(R.id.btLogin)
+        val btnLogin: Button = findViewById(R.id.btnLogin)
 
         btnClear.setOnClickListener{
             inputUssername.setText("")
