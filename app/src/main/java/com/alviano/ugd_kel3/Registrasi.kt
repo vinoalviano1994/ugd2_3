@@ -64,12 +64,8 @@ class Registrasi : AppCompatActivity() {
 
         })
         btnLogin.setOnClickListener(View.OnClickListener {
-            var checkRegistrasi = true
-            var checkLogin = false
-            if(checkRegistrasi == true){
-                val moveLogin = Intent(this@Registrasi, MainActivity::class.java)
-                startActivity(moveLogin)
-            }
+            val moveLogin = Intent(this@Registrasi, MainActivity::class.java)
+            startActivity(moveLogin)
         })
     }
 }

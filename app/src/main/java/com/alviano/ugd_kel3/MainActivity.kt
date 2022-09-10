@@ -1,5 +1,6 @@
 package com.alviano.ugd_kel3
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -33,6 +34,11 @@ class MainActivity : AppCompatActivity() {
             inputPassword.setText("")
 
             Snackbar.make(mainLayout, "Text Cleared Success", Snackbar.LENGTH_LONG).show()
+        }
+
+        btnRegister.setOnClickListener {
+            val moveRegister = Intent(this@MainActivity, Registrasi::class.java)
+            startActivity(moveRegister)
         }
 
 
