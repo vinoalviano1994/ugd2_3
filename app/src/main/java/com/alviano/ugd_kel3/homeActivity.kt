@@ -16,10 +16,29 @@ class homeActivity : AppCompatActivity() {
     private val pesananFragment = PesananFragment()
     private val costumerFragment = Fragment_customer()
 
+    lateinit var bottomNav : BottomNavigationView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
         changeFragment(costumerFragment)
+        bottomNav = findViewById(R.id.bottom_navigation) as BottomNavigationView
+        bottomNav.setOnNavigationItemReselectedListener{
+            when (it.itemId){
+                R.id.menu_home -> {
+                    changeFragment(homeFragment)
+                    return@setOnNavigationItemReselectedListener
+                }
+                R.id.menu_Order -> {
+                    changeFragment(costumerFragment)
+                    return@setOnNavigationItemReselectedListener
+                }
+                R.id.menu_account -> {
+
+                }
+            }
+        }
+
 
     }
 
@@ -38,17 +57,6 @@ class homeActivity : AppCompatActivity() {
         return true
     }
 
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        if(item.itemId == R.id.menu_home){
-            changeFragment(homeFragment)
-        }else if(item.itemId == R.id.menu_Order){
-            changeFragment(costumerFragment)
-        }else if(item.itemId == R.id.menu_account){
 
-        }else if(item.itemId == R.id.menu_notifikasi){
-
-        }
-        return super.onOptionsItemSelected(item)
-    }
 
 }
